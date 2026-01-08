@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Membuka Game…</title>
+
+  <script>
+    // Auto buka APK KWAI langsung ke halaman game
+    window.location.href =
+      "intent://m-game.kwai.com/share/game-invite?gameId=1001893&gameFrom=ug_task_1179&sceneFrom=ug_task&shareEnter=1#Intent;scheme=https;package=com.kwai.bulldog;end";
+
+    // Fallback ke Play Store kalau APK belum terinstall
+    setTimeout(function () {
+      window.location.href =
+        "https://play.google.com/store/apps/details?id=com.kwai.bulldog";
+    }, 1500);
+  </script>
+</head>
+
+<body>
+  <p>Membuka aplikasi…</p>
+</body>
+</html>
